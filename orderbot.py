@@ -1,8 +1,13 @@
 import os
 import openai
-from dotenv import load_dotenv, find_dotenv
-_ = load_dotenv(find_dotenv()) # read local .env file
-
 import streamlit as st
-st.title('My first app')
-st.write('Hello world')
+
+openai.api_key = st.secrets["api_secret"]
+# Para o streamlit é melhor usar esse tipo de chave da  openai.
+#cria um arquivo com extensão .toml e salva na pasta .streamlit
+
+# Create Text Area Widget to enable user to enter texts
+article_text = st.text_area("enter text")
+
+# Create Radio Buttons
+
