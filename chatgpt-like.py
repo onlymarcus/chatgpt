@@ -1,18 +1,5 @@
 import openai
 import streamlit as st
-st.set_page_config(
-    page_title="Seu Título",
-    page_icon="🚀",
-    layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items={
-        "Get help": False,
-        "Report a bug": False,
-        "About": False,
-        "menuItem1": "Item 1",
-    },
-)
-
 
 with st.sidebar:
     openai_api_key = st.text_input(
