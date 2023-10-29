@@ -6,9 +6,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        "getHelp": False,
-        "reportBug": False,
-        "about": False,
+        "Get help": False,
+        "Report a bug": False,
+        "About": False,
         "menuItem1": "Item 1",
     },
 )
